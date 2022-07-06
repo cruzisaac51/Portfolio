@@ -73,7 +73,7 @@ body #content .main .sobreMi .pOne h1,body .rightBar .fade a{-webkit-transition:
 @media (max-width:768px){body #content .main{padding:0 40px}}
     body #content .main .sobreMi{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;min-height:100vh;padding:0}body #content .main .sobreMi .pOne h1{margin:0 0 30px 4px;color:#ebff05;font-size:clamp(14px,5vw,16px);font-weight:400;-o-transition:all .25s cubic-bezier(.645,.045,.355,1);transition:all .25s cubic-bezier(.645,.045,.355,1)}
 
-body #content .main .sobreMi .pDos h2{margin:0;font-size:clamp(40px,8vw,80px)}body #content .main .sobreMi .pTres h3{margin-top:10px;color:#8892b0;line-height:.9;font-size:clamp(20px,8vw,40px)}
+body #content .main .sobreMi .pDos h2{margin:0;font-size:clamp(63px,12vw,100px)}body #content .main .sobreMi .pTres h3{margin-top:10px;color:#8892b0;line-height:.9;font-size:clamp(20px,8vw,40px)}
 
 body #content .main .sobreMi .pCuatro p{margin:20px 0 0;max-width:540px}body #content .main .sobreMi .pCuatro p>a{display:inline-block;-webkit-text-decoration-skip:ink;position:relative;-webkit-transition:all .25s cubic-bezier(.645,.045,.355,1);-o-transition:all .25s cubic-bezier(.645,.045,.355,1);transition:all .25s cubic-bezier(.645,.045,.355,1);color:#ebff05}
 
