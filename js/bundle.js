@@ -225,20 +225,20 @@
             p.classList.toggle("blur")
         }
         ));
-        var g = document.querySelector(".pop_up_sobremi_cerrar")
-          , f = document.querySelector(".pop_up_sobremi");
-        g.addEventListener("click", (function() {
-            document.querySelector(".price-section").classList.toggle("scale-out-bottom"),
-            setTimeout((function() {
-                f.classList.toggle("scale-out-horizontal")
-            }
-            ), 200),
-            setTimeout((function() {
-                f.classList.toggle("active")
-            }
-            ), 710)
-        }
-        ));
+        //var g = document.querySelector(".pop_up_sobremi_cerrar")
+        //  , f = document.querySelector(".pop_up_sobremi");
+        //g.addEventListener("click", (function() {
+        //    document.querySelector(".price-section").classList.toggle("scale-out-bottom"),
+        //    setTimeout((function() {
+        //        f.classList.toggle("scale-out-horizontal")
+        //    }
+        //    ), 200),
+        //    setTimeout((function() {
+        //        f.classList.toggle("active")
+        //    }
+        //    ), 710)
+        //}
+        //));
         var v = document.querySelector("#project_sec_ul");
         window.onload = function() {
             fetch("https://api.github.com/users/cruzisaac51/repos?per_page=100").then((function(e) {
