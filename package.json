@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "jquery-particles": "^2.9.3",
+    "tsparticles-engine": "^2.9.3"
+  }
+}
