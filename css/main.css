@@ -2161,6 +2161,7 @@ body #content .earxGk .iKeBGp {
         max-width:270px;
         margin:0 auto 10px;
         color:#a8b2d1;
+        z-index: 3;
     }
 }
 
