@@ -189,6 +189,9 @@ body header .nav .list .cv1 {
     margin-left:15px;
     font-size:15px;
     animation: spin 1.5s linear infinite;
+    -webkit-animation: spin 1.5s linear infinite;
+    -moz-animation: spin 1.5s linear infinite;
+
 }
 body header .nav .list .cv {
     color:#ebff05;
