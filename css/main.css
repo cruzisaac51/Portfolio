@@ -1386,7 +1386,8 @@ body #content .main .projects .numbered-heading::after {
     content:"";
     display:block;
     position:relative;
-    top:-5px;width:300px;
+    top:-5px;
+    width:300px;
     height:1px;
     margin-left:20px;
     background-color:#233554;
@@ -1444,6 +1445,12 @@ body #content .main .projects .blog-slider__item {
         -webkit-box-direction:normal;
         -ms-flex-direction:column;
         flex-direction:column;
+    }
+    body #content .main .projects .numbered-heading::after {
+        width:150px;
+    }
+    body #content .main .projects .numbered-heading {
+        white-space: normal;
     }
 }
 
