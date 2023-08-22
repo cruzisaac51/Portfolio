@@ -2514,3 +2514,51 @@ canvas {
     background-size: contain;
     background-position: 50% 50%;
   }
+.NodeJs {
+    display: flex;
+    align-items: center;
+}
+.PostgreSQL {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.Express {
+    display: flex;
+    align-items: center;
+    font: 25px helvetica neue,open sans,sans-serif !important;
+    font-weight: 100!important;
+    color: #fff!important;
+}
+.JavaScript {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.TypeScript {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.Boostrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+.Python {
+    align-items: center;
+}
+.MySQL img {
+    height:40px; 
+    width:110px;
+}
+.MySQL {
+    display: flex;
+    align-items: center;
+}
+.Flask img {
+    height:40px; 
+    width:110px;
+    background-color: white;
+}
