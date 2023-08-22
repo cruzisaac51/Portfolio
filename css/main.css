@@ -2523,6 +2523,10 @@ canvas {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+.PostgreSQL img {
+    height:40px;
+    width:40px;
+}
 .Express {
     display: flex;
     align-items: center;
@@ -2535,6 +2539,10 @@ canvas {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
+.JavaScript img {
+    height:40px; 
+    width:40px;
+}
 .TypeScript {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2545,6 +2553,10 @@ canvas {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     align-items: center;
+}
+.Boostrap img {
+    height:40px; 
+    width:40px;
 }
 .Python {
     align-items: center;
