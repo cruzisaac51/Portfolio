@@ -1082,6 +1082,7 @@ body #content .main .jobs .numbered-heading::after {
         display:-ms-flexbox;
         display:flex;
         overflow:auto;
+        flex-direction: column;
     }
     
     body #content .main .jobs .inner .btn::-webkit-scrollbar {
@@ -1271,6 +1272,7 @@ body #content .main .jobs .inner .job .jobsss h3 .company a {
     -o-transition:all .25s cubic-bezier(.645,.045,.355,1);
     transition:all .25s cubic-bezier(.645,.045,.355,1);
     color:#ebff05;
+    z-index: 3;
 }
 
 body #content .main .jobs .inner .job .jobsss h3 .company a::after {
@@ -1287,18 +1289,17 @@ body #content .main .jobs .inner .job .jobsss h3 .company a::after {
     opacity:.5;
 }
 
-body #content .main .jobs .inner .job .jobsss h3 .company a:hover::after {
-    content:"";
-    display:block;
-    width:100%;
-    height:1px;
-    position:relative;
-    bottom:.37em;
-    background-color:#ebff05;
+body #content .main .jobs .inner .job .jobsss h3 .company a:hover {
+    content: "";
+    position: relative;
+    text-decoration: underline;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #ebff0538;
     -webkit-transition:all .25s cubic-bezier(.645,.045,.355,1);
     -o-transition:all .25s cubic-bezier(.645,.045,.355,1);
     transition:all .25s cubic-bezier(.645,.045,.355,1);
-    opacity:.5;
 }
 
 body #content .main .jobs .inner .job .jobsss .range {
@@ -2172,6 +2173,10 @@ body #content .earxGk .iKeBGp {
         margin:0 auto 10px;
         color:#a8b2d1;
         z-index: 3;
+    }
+    body #content .main .about .inner .pD .skills-list{
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
 
