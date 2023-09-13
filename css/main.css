@@ -1397,7 +1397,7 @@ body #content .main .projects .numbered-heading::after {
     background-color:#233554;
 }
 
-body #content .main .projects .blog-slider {
+/* body #content .main .projects .blog-slider {
     width:95%;
     position:relative;
     max-width:800px;
@@ -1744,7 +1744,7 @@ body #content .main .projects .blog-slider__button {
 
 body #content .main .projects .blog-slider__button:hover {
     background:rgba(235,255,5,.1);
-}
+} */
 
 body #content .main .projects .blog-slider .swiper-container-horizontal>.swiper-pagination-bullets,
 body #content .main .projects .blog-slider .swiper-pagination-custom,
@@ -1931,7 +1931,7 @@ body #content .main .other_projects .ctn .grid .dIMCBf .project-inner {
     -webkit-box-align:start;
     -ms-flex-align:start;
     align-items:flex-start;
-    height:100%;
+    min-height:100%;
     padding:2rem 1.75rem;
     border-radius:10px;
     background-color:#112240;
@@ -2155,7 +2155,6 @@ body #content .earxGk {
     -webkit-box-direction:normal;
     -ms-flex-direction:column;
     flex-direction:column;
-    height:auto;
     min-height:70px;
     padding:15px;
     text-align:center;
