@@ -2062,10 +2062,16 @@ body #content .main .contact_boxeeeee {
     text-align:center;
     padding:100px 0;
 }
+#contact {
+    display: none;
+}
 
 @media (max-width:768px) {
     body #content .main .contact_boxeeeee {
         padding:40px 0;
+    }
+    #contact {
+        display: none;
     }
 }
 
