@@ -11,3 +11,6 @@
 6- ScrollTrigger 3.11.2
 7- jQuery v3.3.1
 8- Swiper 4.3.5
+
+
+https://isaac-cruz.netlify.app/
