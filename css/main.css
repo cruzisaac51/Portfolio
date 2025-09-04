@@ -1035,7 +1035,7 @@ body #content .main .about .inner .image .wrapper::before {
 
 body #content .main .jobs {
     margin:0 auto;
-    padding:100px 0;
+    padding:30px 0;
     max-width:900px;
 }
 
