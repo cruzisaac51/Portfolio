@@ -110,19 +110,56 @@
             delay: 1.2,
             y: 50,
             duration: 1.2
-        }),
-        window.onscroll = function() {
-            var e = document.querySelector(".header")
-              , t = window.scrollY;
-            t <= this.scrollPs ? (this.scrollPs = t,
-            e.setAttribute("style", "transform: translateY(0);")) : (this.scrollPs = t,
-            e.setAttribute("style", "transform: translateY(-20%); background-color: rgb(10 25 47 / 6%);"));
-            var n = document.querySelector(".nav"), t = window.scrollY;
-            t <= this.scrollPs ? (this.scrollPs = t,
-            n.setAttribute("style", "background-color: rgb(10 25 47 / 0%)")) : (this.scrollPs = t);
+        });
 
-        }
-        ;
+        
+       let lastScrollY = 0;
+
+        window.addEventListener('scroll', function () {
+            const currentScrollY = window.scrollY;
+            const header = document.querySelector(".header");
+            const nav = document.querySelector(".nav");
+            const logo = document.getElementById("logo");
+
+            console.log('SCROLL:', { currentScrollY, lastScrollY });
+
+            const nearTop = currentScrollY <= 150;
+
+            if (currentScrollY < lastScrollY && nearTop) {
+                console.log('Scroll hacia arriba (y estamos cerca del tope)');
+
+                if (header) {
+                    header.setAttribute("style", "transform: translateY(0);");
+                }
+
+                if (nav) {
+                    nav.setAttribute("style", "background-color: rgb(10 25 47 / 0%)");
+                }
+
+                if (logo) {
+                    logo.classList.remove("small-logo");
+                }
+            } else {
+                console.log('Scroll hacia abajo (o no estamos cerca del tope)');
+
+                if (header) {
+                    header.setAttribute("style", "transform: translateY(-20%); background-color: rgb(10 25 47 / 6%);");
+                }
+
+                if (logo) {
+                    logo.classList.add("small-logo");
+                }
+            }
+
+            lastScrollY = currentScrollY;
+        });
+
+
+
+
+        
+
+
         // window.addEventListener("load", () => {
         //     document.getElementById("typewriter").classList.add("start");
         //     document.getElementById("typewriter2").classList.add("start");

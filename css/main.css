@@ -111,19 +111,31 @@ body header .nav {
     height:100px;
 }
 body header .nav .logo #logo {
-    width:48px;
-    height:48px;
+    width:75px;
+    height:75px;
     background-color:#ffffff;
     border-radius: 8px;
+    transition: width 0.3s ease, height 0.3s ease, border 0.3s ease;
 }
-body header .nav .logo #logo:hover {
-    width: 58px;
-    height: 58px;
+body header .nav .logo #logo:hover:not(.small-logo) {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+body header .nav .logo #logo.small-logo {
+  width: 45px;
+  height: 45px;
+}
+body header .nav .logo #logo.small-logo:hover {
+  transform: scale(1.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
 }
 body header .nav .list {
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
+    color: white;
 }
 @media (max-width:768px){
     body header .nav .list {
@@ -839,6 +851,7 @@ body #content .main .about .inner {
     justify-items:center;
     grid-auto-flow:dense;
     gap:50px;
+    margin-left: 4rem;
 }
 
 body #content .main .about .inner .pD p {
@@ -906,6 +919,7 @@ body #content .main .about .inner .pD .skills-list li::before {
     position:absolute;
     left:0;
     color:#ebff05;
+    top: 2rem;
     font-size:14px;
     line-height:12px;
 }
@@ -1022,7 +1036,7 @@ body #content .main .about .inner .image .wrapper::before {
 body #content .main .jobs {
     margin:0 auto;
     padding:100px 0;
-    max-width:700px;
+    max-width:900px;
 }
 
 body #content .main .jobs .numbered-heading {
@@ -1118,6 +1132,7 @@ body #content .main .jobs .inner {
     display:-webkit-box;
     display:-ms-flexbox;
     display:flex;
+    margin-left: 4rem;
 }
 
 body #content .main .jobs .inner .btn {
@@ -1256,6 +1271,90 @@ body #content .main .jobs .inner .job .jobsss h3 {
     font-size:22px;
     font-weight:500;
     line-height:1.3;
+}
+
+.jobssst {
+    width:100%;
+    height:auto;
+    padding:10px 5px;
+    transition:all .25s cubic-bezier(.645,.045,.355,1);
+}
+
+.jobssst h3 {
+    margin-bottom:2px;
+    font-size:22px;
+    font-weight:500;
+    line-height:1.3;
+}
+
+.jobssst h3 .company {
+    color:#ebff05;
+}
+
+.jobssst h3 .company a {
+    display:inline-block;
+    text-decoration:none;
+    -webkit-text-decoration-skip:ink;
+    text-decoration-skip-ink:auto;
+    position:relative;
+    -webkit-transition:all .25s cubic-bezier(.645,.045,.355,1);
+    -o-transition:all .25s cubic-bezier(.645,.045,.355,1);
+    transition:all .25s cubic-bezier(.645,.045,.355,1);
+    color:#ebff05;
+    z-index: 3;
+}
+
+jobssst h3 .company a::after {
+    content:"";
+    display:block;
+    width:0;
+    height:1px;
+    position:relative;
+    bottom:.37em;
+    background-color:#ebff05;
+    -webkit-transition:all .25s cubic-bezier(.645,.045,.355,1);
+    -o-transition:all .25s cubic-bezier(.645,.045,.355,1);
+    transition:all .25s cubic-bezier(.645,.045,.355,1);
+    opacity:.5;
+}
+
+.jobssst h3 .company a:hover {
+    content: "";
+    position: relative;
+    text-decoration: underline;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    background-color: #ebff0538;
+    -webkit-transition:all .25s cubic-bezier(.645,.045,.355,1);
+    -o-transition:all .25s cubic-bezier(.645,.045,.355,1);
+    transition:all .25s cubic-bezier(.645,.045,.355,1);
+}
+.jobssst .range {
+    margin-bottom:25px;
+    color:#a8b2d1;
+    font-family:SFmono,"Roboto Mono",monospace;
+    font-size:13px;
+}
+
+.jobssst div ul {
+    padding:0;
+    margin:0;
+    list-style:none;
+    font-size:18px;
+}
+
+.jobssst div ul li {
+    position:relative;
+    padding-left:30px;
+    margin-bottom:10px;
+}
+
+.jobssst div ul li::before {
+    content:"▹";
+    position:absolute;
+    left:0;
+    color:#ebff05;
 }
 
 body #content .main .jobs .inner .job .jobsss h3 .company {
@@ -2062,9 +2161,9 @@ body #content .main .contact_boxeeeee {
     text-align:center;
     padding:100px 0;
 }
-#contact {
+/* #contact {
     display: none;
-}
+} */
 
 @media (max-width:768px) {
     body #content .main .contact_boxeeeee {
@@ -2528,6 +2627,10 @@ canvas {
     display: flex;
     align-items: center;
 }
+.NodeJs img{
+    height:50px; 
+    width:130px;
+}
 .PostgreSQL {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2550,13 +2653,20 @@ canvas {
     gap: 10px;
 }
 .JavaScript img {
-    height:40px; 
-    width:40px;
+    height:50px; 
+    width:60px;
 }
 .TypeScript {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    align-items: center;
+}
+
+.TypeScript-icon {
+    display: flex;
+    justify-content: space-evenly;
+    width: 110%;
 }
 .Boostrap {
     display: grid;
@@ -2572,15 +2682,15 @@ canvas {
     align-items: center;
 }
 .MySQL img {
-    height:40px; 
-    width:110px;
+    height:50px; 
+    width:140px;
 }
 .MySQL {
     display: flex;
     align-items: center;
 }
 .Flask img {
-    height:40px; 
+    height:50px; 
     width:110px;
     background-color: white;
 }
@@ -2592,32 +2702,6 @@ canvas {
     width: 20rem;
     overflow: hidden;
 }
-
-/* .pOne h1 {
-  position: absolute;
-  width: 100%;
-  text-align: center;
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeSlide 16s infinite;
-} */
-
-/* .pOne h1:nth-child(1) {
-  animation-delay: 0s;
-}
-.pOne h1:nth-child(2) {
-  animation-delay: 10s;
-} */
-
-/* @keyframes fadeSlide {
-  0% { opacity: 0; transform: translateY(20px); }
-  10% { opacity: 1; transform: translateY(0); }
-  40% { opacity: 1; transform: translateY(0); }
-  50% { opacity: 0; transform: translateY(-20px); }
-  100% { opacity: 0; transform: translateY(-20px); }
-} */
-
-
 .typewriter {
     color: #fefefe!important;
 }
@@ -2636,7 +2720,7 @@ canvas {
 /* La animación solo corre cuando se agrega la clase .start */
 .typewriter.start {
     opacity: 1;
-    animation: typing 4s steps(30, end) infinite alternate, blink .6s step-end infinite;
+    animation: typing 3s steps(40, end) infinite alternate, blink .7s step-end infinite;
 }
 
 @keyframes typing {
