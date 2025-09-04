@@ -108,12 +108,12 @@ body header .nav {
     -moz-user-select:auto!important;
     -ms-user-select:auto!important;
     user-select:auto!important;
-    height:80px;
+    height:100px;
 }
 body header .nav .logo #logo {
     width:48px;
     height:48px;
-    background-color:#ebff05;
+    background-color:#ffffff;
     border-radius: 8px;
 }
 body header .nav .logo #logo:hover {
@@ -2583,4 +2583,67 @@ canvas {
     height:40px; 
     width:110px;
     background-color: white;
+}
+
+
+.pOne {
+    position: relative;
+    height: 60px; /* ajusta según tu diseño */
+    width: 20rem;
+    overflow: hidden;
+}
+
+/* .pOne h1 {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlide 16s infinite;
+} */
+
+/* .pOne h1:nth-child(1) {
+  animation-delay: 0s;
+}
+.pOne h1:nth-child(2) {
+  animation-delay: 10s;
+} */
+
+/* @keyframes fadeSlide {
+  0% { opacity: 0; transform: translateY(20px); }
+  10% { opacity: 1; transform: translateY(0); }
+  40% { opacity: 1; transform: translateY(0); }
+  50% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 0; transform: translateY(-20px); }
+} */
+
+
+.typewriter {
+    color: #fefefe!important;
+}
+
+.typewriter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    border-right: .15em solid #ffd702;
+    white-space: nowrap;
+    width: 0;
+}
+
+/* La animación solo corre cuando se agrega la clase .start */
+.typewriter.start {
+    opacity: 1;
+    animation: typing 4s steps(30, end) infinite alternate, blink .6s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  from, to { border-color: transparent }
+  50% { border-color: #ffd702 }
 }

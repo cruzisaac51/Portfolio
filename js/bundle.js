@@ -81,12 +81,12 @@
                 duration: o
             })
         }
-        gsap.from(".pOne", {
-            opacity: 0,
-            delay: .8,
-            y: 54,
-            duration: .8
-        }),
+        // gsap.from(".pOne", {
+        //     opacity: 0,
+        //     delay: .8,
+        //     y: 54,
+        //     duration: .8
+        // }),
         gsap.from(".pDos", {
             opacity: 0,
             delay: .9,
@@ -116,9 +116,44 @@
               , t = window.scrollY;
             t <= this.scrollPs ? (this.scrollPs = t,
             e.setAttribute("style", "transform: translateY(0);")) : (this.scrollPs = t,
-            e.setAttribute("style", "transform: translateY(-25%);"))
+            e.setAttribute("style", "transform: translateY(-20%); background-color: rgb(10 25 47 / 6%);"));
+            var n = document.querySelector(".nav"), t = window.scrollY;
+            t <= this.scrollPs ? (this.scrollPs = t,
+            n.setAttribute("style", "background-color: rgb(10 25 47 / 0%)")) : (this.scrollPs = t);
+
         }
         ;
+        // window.addEventListener("load", () => {
+        //     document.getElementById("typewriter").classList.add("start");
+        //     document.getElementById("typewriter2").classList.add("start");
+
+        // });
+        window.addEventListener("load", () => {
+            const lines = [document.getElementById("typewriter"), document.getElementById("typewriter2")];
+            let index = 0;
+
+            function showLine() {
+                // quitar animación de todas
+                lines.forEach(line => {
+                    line.classList.remove("start");
+                    line.style.width = "0";
+                });
+                
+
+                // activar la actual
+                lines[index].classList.add("start");
+
+                // siguiente índice
+                index = (index + 1) % lines.length;
+
+                // volver a llamar después de unos segundos
+                setTimeout(showLine, 4000); // 3s de typing + 1s de pausa
+            }
+
+            showLine();
+        });
+
+
         var s = gsap.utils.toArray(".nss")
           , a = gsap.utils.toArray(".jobsss")
           , i = document.getElementById("barra");
