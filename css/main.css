@@ -1078,7 +1078,7 @@ body #content .main .jobs .numbered-heading::after {
 
 
 /* small version */
-@media (max-width:768px) {
+@media (min-width: 200px) and (max-width: 768px) {
     body #content .main .jobs .inner {
         display:-webkit-box;
         display:-ms-flexbox;
@@ -1089,6 +1089,7 @@ body #content .main .jobs .numbered-heading::after {
         flex-direction:column;
         width:100%;
         gap:10PX;
+        margin-left: 0px!important;
     }
 
     body #content .main .jobs .inner .btn {
@@ -2169,9 +2170,9 @@ body #content .main .contact_boxeeeee {
     body #content .main .contact_boxeeeee {
         padding:40px 0;
     }
-    #contact {
+    /* #contact {
         display: none;
-    }
+    } */
 }
 
 body #content .main .contact_boxeeeee .overline {
