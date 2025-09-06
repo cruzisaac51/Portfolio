@@ -803,7 +803,7 @@ body #content .main .sobreMi .pCinco a:hover {
 body #content .main .about {
     margin:0 auto;
     padding:100px 0;
-    max-width:900px;
+    width:100%;
 }
 
 body #content .main .about .numbered-heading {
@@ -1036,7 +1036,7 @@ body #content .main .about .inner .image .wrapper::before {
 body #content .main .jobs {
     margin:0 auto;
     padding:30px 0;
-    max-width:900px;
+    width:100%;
 }
 
 body #content .main .jobs .numbered-heading {
@@ -1456,7 +1456,6 @@ body #content .main .projects {
     align-items:center;
     margin: -85px auto;
     padding:100px 0 0 0;
-    max-width:1000px;
     width:100%;
 }
 
@@ -1934,7 +1933,6 @@ body #content .main .other_projects {
     align-items:center;
     margin:0 auto;
     padding:100px 0;
-    max-width:1000px;
     width:100%;
 }
 
